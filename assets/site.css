@@ -1,0 +1,51 @@
+:root{
+  --paper:#FBF9F6;
+  --ink:#2F2A28;
+  --primary:#B88682;
+  --shadow-soft:0 4px 40px rgba(58,53,50,0.04);
+}
+
+html,body{height:100%;}
+body{
+  min-height:max(884px,100dvh);
+  background:var(--paper);
+  color:var(--ink);
+}
+
+.pb-safe{padding-bottom:env(safe-area-inset-bottom);}
+.pt-safe{padding-top:env(safe-area-inset-top);}
+
+.drop-cap::first-letter{
+  float:left;
+  font-family:Newsreader,serif;
+  font-size:5rem;
+  line-height:1;
+  padding-right:0.75rem;
+  color:var(--primary);
+  font-style:italic;
+  font-weight:600;
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(12px);
+  transition:opacity 700ms ease, transform 700ms ease;
+  will-change:opacity,transform;
+}
+.reveal.is-visible{
+  opacity:1;
+  transform:none;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none;transition:none;}
+}
+
+/* Readability: many elements intentionally use Tailwind opacity utilities.
+   On iPhone, that can feel too faint; boost opacity for TEXT elements only. */
+:is(p, span, a, cite, blockquote, li, figcaption, small, em, strong).opacity-60{opacity:0.92 !important;}
+:is(p, span, a, cite, blockquote, li, figcaption, small, em, strong).opacity-65{opacity:0.93 !important;}
+:is(p, span, a, cite, blockquote, li, figcaption, small, em, strong).opacity-70{opacity:0.94 !important;}
+:is(p, span, a, cite, blockquote, li, figcaption, small, em, strong).opacity-75{opacity:0.95 !important;}
+:is(p, span, a, cite, blockquote, li, figcaption, small, em, strong).opacity-80{opacity:0.96 !important;}
+

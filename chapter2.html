@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chapter 2 — The Archive</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Serif:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: '#FBF9F6',
+              ink: '#2F2A28',
+              primary: '#B88682',
+            },
+            fontFamily: {
+              headline: ['Newsreader', 'serif'],
+              body: ['Noto Serif', 'serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body class="bg-paper text-ink font-body selection:bg-primary selection:text-white overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-50 bg-paper/80 backdrop-blur-md shadow-[0_4px_40px_rgba(58,53,50,0.04)] pt-safe">
+      <div class="flex justify-center items-center px-6 py-4 w-full">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
+          <h1 class="font-headline italic text-sm tracking-[0.22rem] uppercase">The Dewangan Editorial</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-28 px-6 max-w-6xl mx-auto pb-32">
+      <section class="mb-16 flex flex-col items-center text-center">
+        <span class="text-[11px] uppercase tracking-[0.2rem] opacity-70 mb-5 reveal">Chapter Two</span>
+        <h2 class="text-5xl md:text-6xl font-headline italic leading-tight mb-7 reveal">The Archive</h2>
+        <div class="w-16 h-px bg-ink/15 mb-7 reveal"></div>
+        <p class="max-w-xl text-[17px] leading-relaxed opacity-75 italic reveal">
+          A collection of moments captured in the periphery. These plates serve as tactile evidence of a journey traveled with intentionality, grace, and a gentle heart.
+        </p>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-start">
+        <div class="md:col-span-7 reveal">
+          <div class="bg-white p-4 shadow-[0_4px_40px_rgba(58,53,50,0.02)]">
+            <!-- IMAGE: chapter2-plate-01 (edit URL in assets/images.config.js) -->
+            <img
+              class="w-full aspect-[4/5] object-cover mb-6 grayscale hover:grayscale-0 transition-all duration-1000"
+              data-image-key="chapter2-plate-01"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4LIEsvVyuHy8IcnOfxc4svhKMA8tZZDN5K9UR6-7-73ecbSndVuGvrvG9AtqF0gkjx8pwM6ojGElFn2RKm0_8uZCI9wUXHFbv7I-DeGqYtlHc5-NCKd7P5iH9vkznarkmMJkVPrIwdsk3Zgg79V_6K3N_ZxggKDZ5cc0RP5ribKLJJmrFcFYRXnLJ58-4buTd9wGo5UFQVN3MJqJ647GnflKlhViEFSN6hU3ISuXpApBGc5gU8smpK_DgkEw8eJtdqNr7N7eqaNo"
+              alt="A quiet study, archival"
+            />
+            <div class="px-1">
+              <span class="text-[11px] uppercase tracking-[0.18rem] opacity-60 block mb-1">Plate No. 01</span>
+              <p class="italic opacity-80">The morning light in the study. A space for reflection and quietude.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 md:pt-24 reveal">
+          <div class="bg-white p-6 shadow-[0_4px_40px_rgba(58,53,50,0.02)]">
+            <!-- IMAGE: chapter2-plate-02 (edit URL in assets/images.config.js) -->
+            <img
+              class="w-full aspect-square object-cover mb-6"
+              data-image-key="chapter2-plate-02"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBu0VxRhPHdyv05VbLlpurNcJaINNW9GD-OVLtTWyfCea2VMxpChQLuTVbbT6Z_uNuh3CGVY9kcrRlqO4RHjLGqbsgbIHeNMfImnTu13Mr617pB1g3lpKsVAWo6nYAZLwSxpPXohQUto9uu0xDmPqbZBSG7Q_5spbh0Ru3K5kgngs3cblqD5ZpZIC1B8I8s3my3NKtQFGQmd41Owatd8qmb00Z4JHo_NMEkIIxiDDtvs5wELDXy9p9T9w-xllo-agOUKz0bTaPuto"
+              alt="Journals and pen"
+            />
+            <div class="px-1">
+              <span class="text-[11px] uppercase tracking-[0.18rem] opacity-60 block mb-1">Plate No. 02</span>
+              <p class="italic opacity-80">The weight of the pen. A lifetime of observations recorded with care.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-12 py-14 reveal">
+          <div class="bg-paper px-8 py-14 text-center">
+            <p class="text-2xl md:text-3xl font-headline italic leading-relaxed max-w-3xl mx-auto">
+              “We do not remember days; we remember the way the light hit the room in the moments that mattered most.”
+            </p>
+          </div>
+        </div>
+
+        <div class="md:col-span-12 reveal">
+          <div class="bg-white p-4 shadow-[0_4px_40px_rgba(58,53,50,0.02)] flex flex-col md:flex-row items-end gap-8">
+            <!-- IMAGE: chapter2-plate-03 (edit URL in assets/images.config.js) -->
+            <img
+              class="w-full md:w-3/4 aspect-[16/7] object-cover grayscale opacity-85"
+              data-image-key="chapter2-plate-03"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYvWESRkIQUwOuIfno6HDEs9mj-556Jwy-nGyu5Pww24SEzISLowIiiyrQoeOHLGLB7JzFwm4SxOVjSzH5TenFgWxbcbaYBSQ6-egumytyIPyiXfr564sFRASYOIY2GuJuZ6C9_Ye4B8K6x6M_bXMKAibWqOlZvhxZubDWdKVPaf3q3ruYDz6q37GaKg4RqqMJL87ZN1-l9NUgtBjMaC0FIm5XO9DsGDIWon23jkGKOn88LOSwWyFqJ2bhtmwnkIFqkDmAUI71rxY"
+              alt="A horizon landscape"
+            />
+            <div class="w-full md:w-1/4 pb-2">
+              <span class="text-[11px] uppercase tracking-[0.18rem] opacity-60 block mb-2">Plate No. 03</span>
+              <h3 class="font-headline italic text-2xl mb-3">The Horizon Call</h3>
+              <p class="italic opacity-80 leading-relaxed">Looking forward with the wisdom of the years behind us.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-6 reveal">
+          <div class="bg-white p-4 shadow-[0_4px_40px_rgba(58,53,50,0.02)]">
+            <!-- IMAGE: chapter2-plate-04 (edit URL in assets/images.config.js) -->
+            <img
+              class="w-full aspect-[3/4] object-cover mb-6 grayscale brightness-110"
+              data-image-key="chapter2-plate-04"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuByns5lF1QzAADii9ostv7yK4_TXpAhEbmHRzoXBWGpnr-SkmkSGvugEi1k_3QuAqlotJbZWcNkzhHamoFH6QzUjRL2B3KqOji7TEgICXZ-ShZduIGUaImIXyna2eHygK_CcIGXyxwC83-zFN2HsONAdjUiU8G1krU9HMTxJ5tf7B9RRoPyQ5wWQ4HRGxOiWhJguE7_Bd-Ba9yocbCd3jO0NpEe-_OLMLmu6oo-4-WdH-d_Efh1D-23q8NhknJBzH0XjvSLuJgxcMQ"
+              alt="A white lily"
+            />
+            <div class="px-1">
+              <span class="text-[11px] uppercase tracking-[0.18rem] opacity-60 block mb-1">Plate No. 04</span>
+              <p class="italic opacity-80">The simplicity of a shared cup of tea and a long conversation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-6 md:mt-10 reveal">
+          <div class="bg-white p-4 shadow-[0_4px_40px_rgba(58,53,50,0.02)]">
+            <!-- IMAGE: chapter2-plate-05 (edit URL in assets/images.config.js) -->
+            <img
+              class="w-full aspect-[4/3] object-cover mb-6"
+              data-image-key="chapter2-plate-05"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWGn9YgtO01TFqOAf4rwS-WPcBv0qqZh_SNhn6uxhiPdpljAwaHAjBuNl-K4X3G8_5NEeGZQy6iHbXhIvO8K7KLzwGf-13G1zQgCEHIMbhUI4JbwEiKKxdKOeKzFiGdARdaJc-fbQb-GvhSYKdfVpcm9q2hcxBAP1fC5HLvRdYuvrc5eVO5CGUA7kzkS2vFjnJdFg9X92KBAuueGo0eAilR9SyvuBXy9ZArLb1Euj_gu51U8RIBcvml4JOqsJIMIAsxOhf8xq3r94"
+              alt="A dinner table"
+            />
+            <div class="px-1">
+              <span class="text-[11px] uppercase tracking-[0.18rem] opacity-60 block mb-1">Plate No. 05</span>
+              <p class="italic opacity-80">A legacy of laughter lingering in the air.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-16 border-t border-ink/10 pt-10 flex items-center justify-between">
+        <a class="inline-flex items-center gap-3 px-5 py-3 rounded-lg border border-ink/15 bg-white text-ink shadow-[0_4px_40px_rgba(58,53,50,0.02)] hover:bg-ink/5 transition-colors" href="chapter1.html">
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+          <span class="font-headline italic text-lg">Previous: The Journey</span>
+        </a>
+        <a class="inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-primary text-black shadow-[0_4px_40px_rgba(58,53,50,0.04)] hover:opacity-90 transition-opacity" href="epilogue.html">
+          <span class="font-headline italic text-lg">Next: A Personal Note</span>
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </footer>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 w-full z-50 bg-paper/90 backdrop-blur-xl pb-safe border-t border-ink/10">
+      <div class="grid grid-cols-4 gap-3 px-4 py-3">
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="index.html">
+          <span class="material-symbols-outlined" aria-hidden="true">auto_stories</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Prelude</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="chapter1.html">
+          <span class="material-symbols-outlined" aria-hidden="true">history_edu</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Journey</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl bg-primary/10 text-ink border border-primary/25 min-h-[64px]" href="chapter2.html" aria-current="page">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">collections_bookmark</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Gallery</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="epilogue.html">
+          <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Letter</span>
+        </a>
+      </div>
+    </nav>
+
+    <script src="assets/images.config.js"></script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>

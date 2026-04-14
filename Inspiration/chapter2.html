@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#ffdad7",
+                    "surface-variant": "#e4e2df",
+                    "secondary-fixed": "#eae1dc",
+                    "tertiary-container": "#759a8b",
+                    "surface-container-highest": "#e4e2df",
+                    "surface-container": "#efeeeb",
+                    "secondary-fixed-dim": "#cec5c0",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#30312f",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#311211",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#44211f",
+                    "surface-tint": "#7e5350",
+                    "primary": "#7e5350",
+                    "tertiary": "#426558",
+                    "on-surface": "#1b1c1a",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#c4ebda",
+                    "outline-variant": "#d5c2c0",
+                    "tertiary-fixed-dim": "#a8cfbe",
+                    "surface": "#fbf9f6",
+                    "on-background": "#1b1c1a",
+                    "on-primary-fixed-variant": "#643c39",
+                    "surface-bright": "#fbf9f6",
+                    "surface-dim": "#dbdad7",
+                    "on-tertiary-container": "#0c3126",
+                    "on-tertiary-fixed-variant": "#2a4d41",
+                    "on-secondary-fixed-variant": "#4b4642",
+                    "on-secondary-fixed": "#1f1b18",
+                    "inverse-primary": "#f1b9b4",
+                    "secondary": "#635d5a",
+                    "primary-fixed-dim": "#f1b9b4",
+                    "on-secondary-container": "#68615e",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f5f3f0",
+                    "on-surface-variant": "#514443",
+                    "primary-container": "#b88682",
+                    "outline": "#837472",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#eae8e5",
+                    "secondary-container": "#e7ded9",
+                    "background": "#fbf9f6",
+                    "on-tertiary-fixed": "#002117"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Noto Serif"],
+                    "label": ["Noto Serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+.paper-grain {
+    position: relative
+    }
+.paper-grain::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDpsh4O6H3kBUUPotl_Maz6okO4dd6ljnn0B7uE5bj1Ti7skFj0Cab9dkM3VVE0ErGs8mxtXiMWquYEhVdQ_5qZXnXrW9DaBSXDg2X81toIobqxXA-drDbsCORCF-a_ZQUDC0EzOpOwOhWijPgsc23WkvVSFEDd5BwTZ4chGlEa1UaJhjxiEFBHQDe1cXIalo3_YkiPd5bQ-scDaAbmbF2Mh6Epln0BjZTrlEcsYzvYRJPuvkx5WU5O5EobuzhQ6_cn8d23e4iDTE8);
+    z-index: 100
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body paper-grain min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FBF9F6]/80 dark:bg-[#1B1C1A]/80 backdrop-blur-md shadow-[0_4px_40px_rgba(27,28,26,0.04)]">
+<div class="flex justify-center items-center px-6 py-4 w-full">
+<div class="absolute left-6 flex items-center space-x-2 text-[#7E5350] dark:text-[#B88682]">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+</div>
+<h1 class="text-xl font-serif text-[#7E5350] dark:text-[#B88682] tracking-widest uppercase font-['Newsreader'] italic">Dewangan Editorial</h1>
+<nav class="hidden md:flex absolute right-6 space-x-8">
+<a class="text-[#635D5A] opacity-60 font-['Newsreader'] uppercase tracking-widest text-xs hover:opacity-100 transition-opacity duration-500" href="#">Cover</a>
+<a class="text-[#635D5A] opacity-60 font-['Newsreader'] uppercase tracking-widest text-xs hover:opacity-100 transition-opacity duration-500" href="#">Narrative</a>
+<a class="text-[#7E5350] font-bold font-['Newsreader'] uppercase tracking-widest text-xs transition-opacity duration-500" href="#">Archive</a>
+<a class="text-[#635D5A] opacity-60 font-['Newsreader'] uppercase tracking-widest text-xs hover:opacity-100 transition-opacity duration-500" href="#">A Personal Note</a>
+</nav>
+</div>
+</header>
+<main class="pt-32 px-6 md:px-[15%] max-w-screen-2xl mx-auto">
+<!-- Hero Section / Header -->
+<section class="mb-24 flex flex-col items-center text-center">
+<span class="label-md text-secondary uppercase tracking-[0.2rem] mb-6 block text-[0.75rem]">Chapter 02</span>
+<h2 class="text-[3.5rem] md:text-[5rem] font-headline italic font-light text-primary leading-tight mb-8">Fragments of Our Time</h2>
+<div class="w-16 h-px bg-outline-variant opacity-30 mb-8"></div>
+<p class="max-w-xl text-lg text-secondary leading-relaxed font-light italic">
+                A curated assembly of moments captured in silence. These plates serve as tactile evidence of a life lived with intentionality and grace.
+            </p>
+</section>
+<!-- Asymmetric Archive Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 items-start">
+<!-- Plate 01: Large Portrait -->
+<div class="md:col-span-7 group">
+<div class="bg-surface-container-low p-4 transition-transform duration-700 group-hover:-rotate-1">
+<img class="w-full aspect-[4/5] object-cover mb-6 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="sepia toned vintage film photograph of a quiet study with dust motes dancing in morning light through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4LIEsvVyuHy8IcnOfxc4svhKMA8tZZDN5K9UR6-7-73ecbSndVuGvrvG9AtqF0gkjx8pwM6ojGElFn2RKm0_8uZCI9wUXHFbv7I-DeGqYtlHc5-NCKd7P5iH9vkznarkmMJkVPrIwdsk3Zgg79V_6K3N_ZxggKDZ5cc0RP5ribKLJJmrFcFYRXnLJ58-4buTd9wGo5UFQVN3MJqJ647GnflKlhViEFSN6hU3ISuXpApBGc5gU8smpK_DgkEw8eJtdqNr7N7eqaNo"/>
+<div class="px-2">
+<span class="label-md text-secondary uppercase tracking-[0.1rem] text-[0.7rem] block mb-1">Plate No. 01</span>
+<p class="body-lg text-on-surface-variant italic">The Study, Autumn 1974. A morning captured in quietude.</p>
+</div>
+</div>
+</div>
+<!-- Plate 02: Small Offset -->
+<div class="md:col-span-5 md:pt-32 group">
+<div class="bg-surface-container p-6 shadow-[0_4px_40px_rgba(27,28,26,0.02)] transition-transform duration-700 group-hover:rotate-1">
+<img class="w-full aspect-square object-cover mb-6" data-alt="close up macro shot of weathered leather journals and a fountain pen on a mahogany desk surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBu0VxRhPHdyv05VbLlpurNcJaINNW9GD-OVLtTWyfCea2VMxpChQLuTVbbT6Z_uNuh3CGVY9kcrRlqO4RHjLGqbsgbIHeNMfImnTu13Mr617pB1g3lpKsVAWo6nYAZLwSxpPXohQUto9uu0xDmPqbZBSG7Q_5spbh0Ru3K5kgngs3cblqD5ZpZIC1B8I8s3my3NKtQFGQmd41Owatd8qmb00Z4JHo_NMEkIIxiDDtvs5wELDXy9p9T9w-xllo-agOUKz0bTaPuto"/>
+<div class="px-2">
+<span class="label-md text-secondary uppercase tracking-[0.1rem] text-[0.7rem] block mb-1">Plate No. 02</span>
+<p class="body-lg text-on-surface-variant italic">The weight of ink. Observations recorded daily.</p>
+</div>
+</div>
+</div>
+<!-- Epigraph Interlude -->
+<div class="md:col-span-12 py-32">
+<div class="bg-surface-container-highest px-8 py-20 text-center">
+<p class="text-2xl md:text-3xl font-headline text-tertiary italic max-w-3xl mx-auto leading-relaxed">
+                        "We do not remember days, we remember moments. The archive is the map of those heartbeats."
+                    </p>
+</div>
+</div>
+<!-- Plate 03: Wide Landscape -->
+<div class="md:col-span-12 group mb-12">
+<div class="relative">
+<div class="bg-surface-container-low p-4 flex flex-col md:flex-row items-end gap-8 transition-transform duration-700 group-hover:translate-y-[-4px]">
+<img class="w-full md:w-3/4 aspect-[16/7] object-cover grayscale opacity-80 group-hover:opacity-100 transition-all duration-700" data-alt="wide landscape photograph of a misty valley at dawn with soft layered blue hills in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYvWESRkIQUwOuIfno6HDEs9mj-556Jwy-nGyu5Pww24SEzISLowIiiyrQoeOHLGLB7JzFwm4SxOVjSzH5TenFgWxbcbaYBSQ6-egumytyIPyiXfr564sFRASYOIY2GuJuZ6C9_Ye4B8K6x6M_bXMKAibWqOlZvhxZubDWdKVPaf3q3ruYDz6q37GaKg4RqqMJL87ZN1-l9NUgtBjMaC0FIm5XO9DsGDIWon23jkGKOn88LOSwWyFqJ2bhtmwnkIFqkDmAUI71rxY"/>
+<div class="w-full md:w-1/4 pb-4">
+<span class="label-md text-secondary uppercase tracking-[0.1rem] text-[0.7rem] block mb-2">Plate No. 03</span>
+<h3 class="headline-md text-primary mb-4">The Horizon Call</h3>
+<p class="body-lg text-on-surface-variant italic leading-relaxed">North Shore explorations. The perspective that keeps us grounded.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Plate 04 & 05: Parallel Memories -->
+<div class="md:col-span-5 group">
+<div class="bg-surface-container p-4 transition-transform duration-700 group-hover:scale-[1.02]">
+<img class="w-full aspect-[3/4] object-cover mb-6 grayscale brightness-110" data-alt="minimalist close up of a single white lily in a clear glass vase against a neutral wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByns5lF1QzAADii9ostv7yK4_TXpAhEbmHRzoXBWGpnr-SkmkSGvugEi1k_3QuAqlotJbZWcNkzhHamoFH6QzUjRL2B3KqOji7TEgICXZ-ShZduIGUaImIXyna2eHygK_CcIGXyxwC83-zFN2HsONAdjUiU8G1krU9HMTxJ5tf7B9RRoPyQ5wWQ4HRGxOiWhJguE7_Bd-Ba9yocbCd3jO0NpEe-_OLMLmu6oo-4-WdH-d_Efh1D-23q8NhknJBzH0XjvSLuJgxcMQ"/>
+<div class="px-2">
+<span class="label-md text-secondary uppercase tracking-[0.1rem] text-[0.7rem] block mb-1">Plate No. 04</span>
+<p class="body-lg text-on-surface-variant italic">Simplicity found in the parlor.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 group mt-12 md:-mt-24">
+<div class="bg-surface-container-low p-4 shadow-[0_4px_40px_rgba(27,28,26,0.03)] transition-transform duration-700 group-hover:rotate-[-2deg]">
+<img class="w-full aspect-[4/3] object-cover mb-6" data-alt="overhead shot of a family dinner table with half-full wine glasses and scattered bread crumbs in warm low light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWGn9YgtO01TFqOAf4rwS-WPcBv0qqZh_SNhn6uxhiPdpljAwaHAjBuNl-K4X3G8_5NEeGZQy6iHbXhIvO8K7KLzwGf-13G1zQgCEHIMbhUI4JbwEiKKxdKOeKzFiGdARdaJc-fbQb-GvhSYKdfVpcm9q2hcxBAP1fC5HLvRdYuvrc5eVO5CGUA7kzkS2vFjnJdFg9X92KBAuueGo0eAilR9SyvuBXy9ZArLb1Euj_gu51U8RIBcvml4JOqsJIMIAsxOhf8xq3r94"/>
+<div class="px-2">
+<span class="label-md text-secondary uppercase tracking-[0.1rem] text-[0.7rem] block mb-1">Plate No. 05</span>
+<p class="body-lg text-on-surface-variant italic">The aftermath of a shared feast. Laughter lingering in the air.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination/Navigation Footer within Canvas -->
+<footer class="mt-48 mb-32 border-t border-outline-variant/15 pt-12 flex flex-col md:flex-row justify-between items-center text-secondary">
+<div class="mb-8 md:mb-0">
+<span class="label-md uppercase tracking-widest opacity-40">Previously</span>
+<a class="block font-headline italic text-xl mt-2 hover:text-primary transition-colors underline decoration-primary-container/30 decoration-2 underline-offset-8" href="#">Chapter 1: The Foundation</a>
+</div>
+<div class="text-center md:text-right">
+<span class="label-md uppercase tracking-widest opacity-40">Next Chapter</span>
+<a class="block font-headline italic text-xl mt-2 hover:text-primary transition-colors underline decoration-primary-container/30 decoration-2 underline-offset-8" href="#">Chapter 3: The Unspoken Word</a>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-8 py-3 bg-[#FBF9F6]/90 dark:bg-[#1B1C1A]/90 backdrop-blur-xl z-50 pb-safe">
+<a class="flex flex-col items-center justify-center text-[#635D5A] dark:text-[#D5C2C0] opacity-40 pt-2 hover:opacity-80 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Newsreader'] text-[10px] uppercase tracking-[0.1rem] mt-1">Cover</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#635D5A] dark:text-[#D5C2C0] opacity-40 pt-2 hover:opacity-80 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="font-['Newsreader'] text-[10px] uppercase tracking-[0.1rem] mt-1">Narrative</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#7E5350] dark:text-[#B88682] border-t-2 border-[#B88682] pt-2 active:scale-95 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="collections_bookmark">collections_bookmark</span>
+<span class="font-['Newsreader'] text-[10px] uppercase tracking-[0.1rem] mt-1">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#635D5A] dark:text-[#D5C2C0] opacity-40 pt-2 hover:opacity-80 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Newsreader'] text-[10px] uppercase tracking-[0.1rem] mt-1">Note</span>
+</a>
+</nav>
+</body></html>

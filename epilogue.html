@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Epilogue — A Personal Note</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Serif:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: '#FBF9F6',
+              ink: '#2F2A28',
+              primary: '#B88682',
+            },
+            fontFamily: {
+              headline: ['Newsreader', 'serif'],
+              body: ['Noto Serif', 'serif'],
+              label: ['Noto Serif', 'serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body class="bg-paper text-ink font-body selection:bg-primary selection:text-white overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-50 bg-paper/80 backdrop-blur-md shadow-[0_4px_40px_rgba(58,53,50,0.04)] pt-safe">
+      <div class="flex justify-center items-center px-6 py-4 w-full">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
+          <h1 class="font-headline italic text-sm tracking-[0.22rem] uppercase">The Dewangan Editorial</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="min-h-screen pt-28 pb-40 px-6 max-w-5xl mx-auto">
+      <section class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start mb-16">
+        <div class="md:col-span-7 reveal">
+          <p class="text-[11px] uppercase tracking-[0.18rem] opacity-70 mb-4">Epilogue</p>
+          <h2 class="font-headline italic text-5xl md:text-6xl leading-tight mb-7">A letter to you</h2>
+          <div class="w-24 h-px bg-primary/30 mb-10"></div>
+        </div>
+
+        <div class="md:col-span-5 relative reveal">
+          <div class="aspect-[3/4] bg-white overflow-hidden shadow-[0_4px_40px_rgba(58,53,50,0.04)] -rotate-2 transition-transform hover:rotate-0 duration-700">
+            <!-- IMAGE: epilogue-hero (edit URL in assets/images.config.js) -->
+            <img
+              class="w-full h-full object-cover grayscale-[20%] sepia-[10%]"
+              data-image-key="epilogue-hero"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuARrF8W9q6EKml7mOHHMrM_Iew9hl7BjJq23vs2S3CRhnLjeCPPNuE6SxnK-KpEEwcJejyjqixjKgGRLR4JqOcKjOZyjd0PoboLpyJ9J6yWQyZhEM1r5Vs6XabILHBGQULDwJpN7sPzIANd8llPdQdPUtRyKkC5SikvuitRrALMNXp4_V_nrvQo6gnyAYk21Xy_AMAq_nemklKCmz5GkQqt3mVsumiAtE1VCTVXZx3AJqlwXWuatd9CYcu20bad8pXe4PSEDvXm-y4"
+              alt="A quiet still life"
+            />
+          </div>
+          <p class="mt-4 text-[12px] opacity-70 text-right italic">“ The wisdom between the lines. ”</p>
+        </div>
+      </section>
+
+      <article class="max-w-2xl mx-auto space-y-10 mb-20">
+        <div class="space-y-7 leading-[1.9] text-[17px] text-ink/90">
+          <p class="reveal">
+            They say an archive is a way of keeping time still, but as I looked through these photographs and letters, I realized that for you, time never really stood still. It moved with purpose. You have always been in motion—learning, giving, and building a world for us that felt safe and full of possibility.
+          </p>
+
+          <div class="py-12 px-8 bg-paper reveal" role="note" aria-label="Epigraph">
+            <blockquote class="font-headline italic text-2xl text-center">
+              “A legacy is not what we leave behind, but what we set in motion in the hearts of others.”
+            </blockquote>
+          </div>
+
+          <p class="reveal">
+            Dad, you taught me that the best way to honor a memory is to live with the same curiosity and kindness that you do. This digital editorial is my small way of pressing our family's most cherished moments into pages that will never fade.
+          </p>
+
+          <p class="reveal">Thank you for the books we shared, the comfortable silences we sat in, and the wisdom you never had to speak aloud because you lived it every single day.</p>
+        </div>
+
+        <div class="mt-14 pt-10 border-t border-ink/10 reveal">
+          <p class="font-headline italic text-2xl text-primary">Happy Birthday, Dad. With all my love, always.</p>
+          <div class="flex items-center gap-4 mt-4">
+            <div class="w-12 h-px bg-primary"></div>
+            <p class="text-[11px] uppercase tracking-[0.18rem] opacity-70">Shibu</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="flex justify-center reveal">
+        <a href="index.html" class="bg-primary text-black px-8 py-3 rounded-lg text-[11px] uppercase tracking-[0.18rem] hover:opacity-90 transition-opacity shadow-[0_4px_40px_rgba(58,53,50,0.04)]">
+          Return to the Start
+        </a>
+      </div>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 w-full z-50 bg-paper/90 backdrop-blur-xl pb-safe border-t border-ink/10">
+      <div class="grid grid-cols-4 gap-3 px-4 py-3">
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="index.html">
+          <span class="material-symbols-outlined" aria-hidden="true">auto_stories</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Prelude</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="chapter1.html">
+          <span class="material-symbols-outlined" aria-hidden="true">history_edu</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Journey</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="chapter2.html">
+          <span class="material-symbols-outlined" aria-hidden="true">collections_bookmark</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Gallery</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl bg-primary/10 text-ink border border-primary/25 min-h-[64px]" href="epilogue.html" aria-current="page">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">mail</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Letter</span>
+        </a>
+      </div>
+    </nav>
+
+    <script src="assets/images.config.js"></script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>

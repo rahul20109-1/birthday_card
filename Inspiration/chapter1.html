@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#ffdad7",
+                    "surface-variant": "#e4e2df",
+                    "secondary-fixed": "#eae1dc",
+                    "tertiary-container": "#759a8b",
+                    "surface-container-highest": "#e4e2df",
+                    "surface-container": "#efeeeb",
+                    "secondary-fixed-dim": "#cec5c0",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#30312f",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#311211",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#44211f",
+                    "surface-tint": "#7e5350",
+                    "primary": "#7e5350",
+                    "tertiary": "#426558",
+                    "on-surface": "#1b1c1a",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#c4ebda",
+                    "outline-variant": "#d5c2c0",
+                    "tertiary-fixed-dim": "#a8cfbe",
+                    "surface": "#fbf9f6",
+                    "on-background": "#1b1c1a",
+                    "on-primary-fixed-variant": "#643c39",
+                    "surface-bright": "#fbf9f6",
+                    "surface-dim": "#dbdad7",
+                    "on-tertiary-container": "#0c3126",
+                    "on-tertiary-fixed-variant": "#2a4d41",
+                    "on-secondary-fixed-variant": "#4b4642",
+                    "on-secondary-fixed": "#1f1b18",
+                    "inverse-primary": "#f1b9b4",
+                    "secondary": "#635d5a",
+                    "primary-fixed-dim": "#f1b9b4",
+                    "on-secondary-container": "#68615e",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f5f3f0",
+                    "on-surface-variant": "#514443",
+                    "primary-container": "#b88682",
+                    "outline": "#837472",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#eae8e5",
+                    "secondary-container": "#e7ded9",
+                    "background": "#fbf9f6",
+                    "on-tertiary-fixed": "#002117"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Noto Serif", "serif"],
+                    "label": ["Noto Serif", "serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .drop-cap::first-letter {
+            float: left;
+            font-family: 'Newsreader', serif;
+            font-size: 5rem;
+            line-height: 1;
+            padding-right: 0.75rem;
+            color: #7E5350;
+            font-style: italic;
+            font-weight: 700;
+        }
+        .bg-velvet-gradient {
+            background: linear-gradient(45deg, #7E5350 0%, #B88682 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed-variant">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#FBF9F6]/80 dark:bg-[#1B1C1A]/80 backdrop-blur-md shadow-[0_4px_40px_rgba(27,28,26,0.04)]">
+<div class="flex justify-center items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#7E5350] dark:text-[#B88682]" data-icon="menu_book">menu_book</span>
+<h1 class="font-['Newsreader'] italic text-lg tracking-tight text-[#7E5350] dark:text-[#B88682] uppercase tracking-widest">Dewangan Editorial</h1>
+</div>
+</div>
+<nav class="hidden md:flex justify-center gap-12 pb-4">
+<a class="text-[#7E5350] font-bold font-['Newsreader'] text-sm tracking-widest uppercase hover:opacity-100 transition-opacity duration-500" href="#">Cover</a>
+<a class="text-[#7E5350] font-bold font-['Newsreader'] text-sm tracking-widest uppercase border-b border-[#7E5350]" href="#">Narrative</a>
+<a class="text-[#635D5A] opacity-60 font-['Newsreader'] text-sm tracking-widest uppercase hover:opacity-100 transition-opacity duration-500" href="#">Archive</a>
+<a class="text-[#635D5A] opacity-60 font-['Newsreader'] text-sm tracking-widest uppercase hover:opacity-100 transition-opacity duration-500" href="#">A Personal Note</a>
+</nav>
+</header>
+<main class="pt-32 pb-32">
+<!-- Hero Section -->
+<section class="max-w-screen-xl mx-auto px-6 md:px-24 mb-32">
+<div class="relative grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 z-10">
+<span class="block font-label text-secondary tracking-[0.2rem] uppercase text-xs mb-4">Chapter One</span>
+<h2 class="font-headline text-6xl md:text-8xl italic text-primary leading-tight mb-8">The Journey</h2>
+<p class="font-label text-secondary italic text-xl max-w-md">A chronicle of service, sacrifice, and the quiet moments that defined a legacy.</p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[3/4] overflow-hidden rounded-lg shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 outline outline-outline-variant/15 outline-1">
+<img class="w-full h-full object-cover grayscale brightness-90" data-alt="vintage sepia toned portrait of a dignified man in a formal suit looking thoughtfully into the distance, professional photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj6QXQyAoq6Wvc9S0o0i89B6JECVd04AwWngsacc-OAAx1mw4Sut2xg9M9UIrzE2-PBcsURCnQA7L93aGwVLRUbJJPbILPsBzkTHUnH-0R0LmNzi5cfQ1DtNjYP1vIT1R3mV-Cl_uL5iutBF1MvjN5kWyA0KFNXwCXIm4lZcbTNVdxyEeX4j-ZnDIoiDMn9WIQSYKDOIVngZAWe99kBuakGufaU2nWY4aQzHo_9uu47vZjvmKSsYo-GuRmOEXTrMdFVXIubjDjjNc"/>
+</div>
+</div>
+</div>
+</section>
+<!-- The Letter Content -->
+<section class="max-w-4xl mx-auto px-6 md:px-12 bg-surface-container-lowest py-24 md:py-32 shadow-[0_4px_40px_rgba(27,28,26,0.02)]">
+<div class="space-y-12 text-on-surface-variant leading-relaxed text-lg md:text-xl">
+<p class="drop-cap">
+                    You have always been a beacon of quiet resilience. Long before the accolades and the titles of the Indian Administrative Service defined you in the eyes of the public, you were defined by the steady cadence of your morning walks and the ink-stained fingers of a scholar. Your journey started in the dusty lanes of our ancestral village, where the only thing larger than the heat was your ambition to serve.
+                </p>
+<p>
+                    I remember the day the results were announced. You didn't shout. You didn't celebrate with the fervor others might have. You simply sat by the window, watching the rain hit the gulmohar trees, and told us that the work was only just beginning. It was that sense of duty—that unshakeable moral compass—that guided you through the corridors of power in New Delhi and the remote districts of the heartland.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-16 items-center">
+<div class="space-y-4">
+<div class="aspect-square bg-surface-container-low p-2 outline outline-outline-variant/15">
+<img class="w-full h-full object-cover" data-alt="grainy black and white archival photo of a busy 1970s government office with rotary phones and stacks of paper files" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX4Q5FezUNkOgOTiw4P9de9lCFmsCj4nnYTHhb_OqKIc21E77xCqQpwrdGoKbHsEY3C1ObWelk-zFmqOKjwj_i59QEH99evscSKnD2rNw24290NYHSR-HuIbXurqhUBX7G0uHqEzT-jyF-Fhsysv3OiR4XgmjaSzBb5r7bIetw3VmpuxbSSiczG1qQe4G1E1PDuzGyJr_RHoj9ted2jw6bowIPOn-o2IEQuZriuSmM3MdqCKn9vnF_fz0z58wxBjLHW_VFJB3KU9I"/>
+</div>
+<span class="block font-label text-xs uppercase tracking-widest text-secondary text-center">The Secretariat, 1982</span>
+</div>
+<p class="italic text-tertiary font-medium">
+                        "Your service was never about the 'Sir' or the protocol. It was about the child who finally got a school building, and the farmer who finally saw water reach his parched soil."
+                    </p>
+</div>
+<p>
+                    Your personal milestones were always intertwined with your public life. When you married Auntie Meera, the ceremony was a reflection of your soul: simple, elegant, and filled with the music of local poets. You carried her support like a hidden reservoir of strength. Even during the most challenging postings—the nights you spent drafting policies under the dim light of a kerosene lamp—you never missed a chance to write back home.
+                </p>
+<!-- Epigraph Component -->
+<div class="py-20 my-16 bg-surface-container-highest flex flex-col items-center justify-center px-8 text-center">
+<span class="material-symbols-outlined text-tertiary mb-6" data-icon="format_quote">format_quote</span>
+<blockquote class="font-headline text-3xl md:text-4xl text-tertiary italic max-w-2xl leading-snug">
+                        The true measure of a man is not the height of his office, but the depth of his impact on the lives he touched.
+                    </blockquote>
+<cite class="mt-8 font-label text-xs uppercase tracking-[0.2rem] text-secondary">A Diary Entry, 1995</cite>
+</div>
+<p>
+                    As the years turned into decades, the black hair turned to silver, and the brisk walk became a dignified stroll. But the fire never left your eyes. You taught us that leadership is not a rank, but a responsibility. You have always been more than an uncle to us; you have been the living embodiment of an era where integrity was the only currency that mattered.
+                </p>
+<div class="pt-12">
+<p class="font-headline italic text-primary text-2xl">With eternal respect and love,</p>
+<p class="font-label uppercase tracking-widest mt-2 text-on-surface">The Family Archivist</p>
+</div>
+</div>
+</section>
+<!-- Image Gallery Mosaic (Asymmetric) -->
+<section class="max-w-screen-xl mx-auto px-6 mt-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[800px]">
+<div class="md:col-span-4 h-full">
+<div class="h-full w-full bg-surface-container-low overflow-hidden outline outline-outline-variant/15 p-1">
+<img class="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 transition-all duration-1000" data-alt="aesthetic close up of an antique fountain pen resting on handwritten parchment paper with soft afternoon shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjB95d_1xFhkwx7Gatdws3jazAjnkw-XjU3I1YxCDK-7J4rAwZW1lEc9RULDg9Iy38X6hlYJuZMuLo9ktYU7saKFWEPYQFy4In45iTMlzq_7LwNHVV6L5yY3p5mD7uglU3AL89KBFdx2998p7EqMrfS869-84QrWBlDFgzzLWoKf1ojZeFCgTw7pfGc85pAgCaZFC7xA3rCGGFGeqRjEY_k1tu-4viDweaj4IYYjT9SyCzEvJfbOEgZadlQtqVVkpZGHzxDJ1wgH0"/>
+</div>
+</div>
+<div class="md:col-span-8 grid grid-cols-2 gap-6">
+<div class="aspect-square bg-surface-container-low overflow-hidden outline outline-outline-variant/15 p-1 mt-12">
+<img class="w-full h-full object-cover" data-alt="symbolic image of a wooden gavel and ancient law books on a dusty mahogany desk, soft atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvifKFY08G942nca9M6omty6PTBfesUBkesk0aijisAS6RiLGy8TrUPkqN0wUPzLERdW7CARR4m8sO9PqrfcdoLYAD_kD9v1vYK9mLjSh9FTrDg7c-cnvkYzI8o2ZRHqN_zK_0nTy3giqRFMaxIAoj-Jf0PguF5ZuYCKTtOvXlpTBuAuWNIz-nvhqslWdb_IHlby4AlsgQ3UisYYOlTeev42s22mf06qSkL161ajYI5ArG1vmGM-ZSlHztYeWdi3ozX0eOF2ew41Q"/>
+</div>
+<div class="aspect-square bg-surface-container-low overflow-hidden outline outline-outline-variant/15 p-1 -mt-6">
+<img class="w-full h-full object-cover brightness-75" data-alt="close up of old leather bound library books stacked on a shelf in a warm cozy library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxcUnMLvwUZoYk9qCw6m9WLyA3t5d1c9bXL7mu-VHij8UaqypsXWGvEvoYpXSIn014BTYRzqLPGK4lwewqN3VhdVmtdnW0uunhVaXp5qEi4V5RJNWAHenpgiMm9WMYfvXuPyi-GpfSXtqFRmkWxEiGZh18E5GMy2SLvZC8j0mr-W4MNMSBOQe2eX0TQy2uAtGst4QQLJ2dL-lYvkZDDFzQimErYGXubYergQdyN4f0fSI444eztsG8RqLGIaw6D95lMwcda4p6BT0"/>
+</div>
+<div class="col-span-2 aspect-video bg-surface-container-low overflow-hidden outline outline-outline-variant/15 p-1">
+<img class="w-full h-full object-cover grayscale" data-alt="wide shot of a peaceful sunset over a rural Indian landscape with silhouettes of trees and a distant village" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClMFmbq8DINeLddDS9Dd90R8GkEr8imD-47TCwEUS3AxjDYSmiyUWCLcgFOH-vwi4A3f2jZ_PtqppCvUOW26QlC-4HB58oJs5i7pB1eSr7KUvisjoxVnzynvHu50EnLZlUHMkI87LiI__bvEl_VVs580rsOrTJOmxmvZk-B9IJLxZ2bSQaOJqK2WaReyNX7pigC8R-jNVtj_IYGu7fOJL2Er4pqLw3sR46MQtLGuPwyLYF9TCvm5uOq7akQEnYev08h8JQqRqnBiY"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell (Mobile Only) -->
+<footer class="md:hidden fixed bottom-0 left-0 w-full bg-[#FBF9F6]/90 dark:bg-[#1B1C1A]/90 backdrop-blur-xl z-50 flex justify-around items-center px-8 py-3 pb-safe">
+<div class="flex flex-col items-center justify-center text-[#635D5A] dark:text-[#D5C2C0] opacity-40 pt-2 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Newsreader'] text-[10px] uppercase tracking-[0.1rem] mt-1">Cover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#7E5350] dark:text-[#B88682] border-t-2 border-[#B88682] pt-2">
+<span class="material-symbols-outlined" data-icon="history_edu" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+<span class="font-['Newsreader'] text-[10px] uppercase tracking-[0.1rem] mt-1">Narrative</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#635D5A] dark:text-[#D5C2C0] opacity-40 pt-2 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="collections_bookmark">collections_bookmark</span>
+<span class="font-['Newsreader'] text-[10px] uppercase tracking-[0.1rem] mt-1">Archive</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#635D5A] dark:text-[#D5C2C0] opacity-40 pt-2 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Newsreader'] text-[10px] uppercase tracking-[0.1rem] mt-1">Note</span>
+</div>
+</footer>
+</body></html>

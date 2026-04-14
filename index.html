@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Dewangan Editorial</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Serif:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: '#FBF9F6',
+              ink: '#2F2A28',
+              primary: '#B88682',
+            },
+            fontFamily: {
+              headline: ['Newsreader', 'serif'],
+              body: ['Noto Serif', 'serif'],
+            },
+            borderRadius: {
+              DEFAULT: '0.125rem',
+              lg: '0.25rem',
+              xl: '0.5rem',
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body class="bg-paper text-ink font-body selection:bg-primary selection:text-white overflow-x-hidden">
+    <!-- Top App Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-paper/80 backdrop-blur-md shadow-[0_4px_40px_rgba(58,53,50,0.04)] pt-safe">
+      <div class="flex justify-center items-center px-6 py-4">
+        <div class="flex items-center gap-2 text-ink">
+          <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
+          <h1 class="text-sm tracking-[0.22rem] uppercase font-headline italic">The Dewangan Editorial</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-24 pb-32 px-6 max-w-6xl mx-auto">
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-center min-h-[70vh]">
+        <div class="lg:col-span-5 order-2 lg:order-1 space-y-8">
+          <div class="space-y-2 reveal">
+            <span class="text-[11px] uppercase tracking-[0.2rem] opacity-70">Volume I — A Quiet North Star</span>
+            <h2 class="text-5xl sm:text-6xl md:text-6xl font-headline italic leading-tight">Dad</h2>
+          </div>
+
+          <div class="w-16 h-px bg-ink/15 reveal"></div>
+
+          <p class="text-[17px] leading-[1.85] opacity-80 max-w-md reveal">
+            To know him is to understand the strength found in stillness. This archive is a curated space of light and memory—a celebration of the quiet dignity, the steady hand, and the life beautifully lived that continues to guide us all.
+          </p>
+
+          <div class="reveal">
+            <blockquote class="font-headline italic text-2xl leading-relaxed text-ink/90">
+              “The heart remembers the light it was given.”
+            </blockquote>
+            <cite class="block mt-4 text-[11px] uppercase tracking-[0.18rem] not-italic opacity-70">— For Dad, on his milestone day</cite>
+          </div>
+
+          <div class="pt-2 reveal">
+            <a href="chapter1.html" class="inline-flex items-center gap-4 bg-primary text-black px-7 py-4 rounded-lg shadow-[0_4px_40px_rgba(58,53,50,0.04)] font-headline italic text-xl hover:opacity-90 transition-opacity">
+              Begin the Story
+              <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+            </a>
+            <p class="mt-4 text-[11px] uppercase tracking-[0.18rem] opacity-60">A digital keepsake for our family’s heartbeat</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div class="relative group w-full max-w-md reveal">
+            <div class="absolute inset-0 bg-ink/5 -rotate-3 translate-x-4 translate-y-4 rounded-sm transition-transform duration-700 group-hover:rotate-0"></div>
+            <div class="relative aspect-[4/5] bg-white p-4 shadow-[0_4px_40px_rgba(58,53,50,0.04)] rotate-2 group-hover:rotate-0 transition-transform duration-700">
+              <!-- IMAGE: cover-portrait (edit URL in assets/images.config.js) -->
+              <img
+                class="w-full h-full object-cover grayscale opacity-90 contrast-110"
+                data-image-key="cover-portrait"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY7PWs-AmUf221Iw828mFPDBksIz0mT6kVPUSXcxSQv6B-mGLlfVKn742t4vtgb0RNZpKoFCo4Qz6j0C66oK_kOY_3C7XTvCJjG510QTtolwUjMHerpFlpSJFTJsgU2W0d8e7qR4zu3Mhu3YIrjhM-k0Qd-aonKXfkC77n9EPCPWRcN2FAHSv_iwDfBZ6bsb4GvPGGnZvevxqzHgBqoiLXuTgA_FU0kS-rh2E_visTFytESJsBZ31oSTiq8s32scSyBvE9mjK158g"
+                alt="Portrait of Dad"
+              />
+
+              <div class="absolute bottom-8 right-8 text-right">
+                <span class="block font-headline italic text-white text-2xl drop-shadow">Vivek Kumar Dewangan</span>
+                <span class="block text-white/80 text-[10px] uppercase tracking-[0.2rem]">1966 — 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Nav (Mobile) -->
+    <nav class="fixed bottom-0 left-0 w-full z-50 bg-paper/90 backdrop-blur-xl pb-safe border-t border-ink/10">
+      <div class="grid grid-cols-4 gap-3 px-4 py-3">
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl bg-primary/10 text-ink border border-primary/25 min-h-[64px]" href="index.html" aria-current="page">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">auto_stories</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Prelude</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="chapter1.html">
+          <span class="material-symbols-outlined" aria-hidden="true">history_edu</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Journey</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="chapter2.html">
+          <span class="material-symbols-outlined" aria-hidden="true">collections_bookmark</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Gallery</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-center py-3 rounded-xl text-ink/90 hover:text-ink hover:bg-ink/5 transition-colors min-h-[64px]" href="epilogue.html">
+          <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          <span class="mt-1 font-headline text-[11px] uppercase tracking-[0.12rem] leading-tight">Letter</span>
+        </a>
+      </div>
+    </nav>
+
+    <script src="assets/images.config.js"></script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+// Image URL overrides
+//
+// How to update photos later:
+// 1) Replace the URL for a key below
+// 2) Re-deploy the site (static hosting)
+//
+// Images in HTML are tagged with: data-image-key="..."
+// This file defines window.SITE_IMAGES used by assets/site.js.
+
+window.SITE_IMAGES = {
+  // Cover
+  'cover-portrait': 'https://lh3.googleusercontent.com/aida-public/AB6AXuBY7PWs-AmUf221Iw828mFPDBksIz0mT6kVPUSXcxSQv6B-mGLlfVKn742t4vtgb0RNZpKoFCo4Qz6j0C66oK_kOY_3C7XTvCJjG510QTtolwUjMHerpFlpSJFTJsgU2W0d8e7qR4zu3Mhu3YIrjhM-k0Qd-aonKXfkC77n9EPCPWRcN2FAHSv_iwDfBZ6bsb4GvPGGnZvevxqzHgBqoiLXuTgA_FU0kS-rh2E_visTFytESJsBZ31oSTiq8s32scSyBvE9mjK158g',
+
+  // Chapter 1
+  'chapter1-hero': 'https://lh3.googleusercontent.com/aida-public/AB6AXuBj6QXQyAoq6Wvc9S0o0i89B6JECVd04AwWngsacc-OAAx1mw4Sut2xg9M9UIrzE2-PBcsURCnQA7L93aGwVLRUbJJPbILPsBzkTHUnH-0R0LmNzi5cfQ1DtNjYP1vIT1R3mV-Cl_uL5iutBF1MvjN5kWyA0KFNXwCXIm4lZcbTNVdxyEeX4j-ZnDIoiDMn9WIQSYKDOIVngZAWe99kBuakGufaU2nWY4aQzHo_9uu47vZjvmKSsYo-GuRmOEXTrMdFVXIubjDjjNc',
+  'chapter1-office': 'https://lh3.googleusercontent.com/aida-public/AB6AXuAX4Q5FezUNkOgOTiw4P9de9lCFmsCj4nnYTHhb_OqKIc21E77xCqQpwrdGoKbHsEY3C1ObWelk-zFmqOKjwj_i59QEH99evscSKnD2rNw24290NYHSR-HuIbXurqhUBX7G0uHqEzT-jyF-Fhsysv3OiR4XgmjaSzBb5r7bIetw3VmpuxbSSiczG1qQe4G1E1PDuzGyJr_RHoj9ted2jw6bowIPOn-o2IEQuZriuSmM3MdqCKn9vnF_fz0z58wxBjLHW_VFJB3KU9I',
+
+  // Chapter 2 (Gallery)
+  'chapter2-plate-01': 'https://lh3.googleusercontent.com/aida-public/AB6AXuC4LIEsvVyuHy8IcnOfxc4svhKMA8tZZDN5K9UR6-7-73ecbSndVuGvrvG9AtqF0gkjx8pwM6ojGElFn2RKm0_8uZCI9wUXHFbv7I-DeGqYtlHc5-NCKd7P5iH9vkznarkmMJkVPrIwdsk3Zgg79V_6K3N_ZxggKDZ5cc0RP5ribKLJJmrFcFYRXnLJ58-4buTd9wGo5UFQVN3MJqJ647GnflKlhViEFSN6hU3ISuXpApBGc5gU8smpK_DgkEw8eJtdqNr7N7eqaNo',
+  'chapter2-plate-02': 'https://lh3.googleusercontent.com/aida-public/AB6AXuBBu0VxRhPHdyv05VbLlpurNcJaINNW9GD-OVLtTWyfCea2VMxpChQLuTVbbT6Z_uNuh3CGVY9kcrRlqO4RHjLGqbsgbIHeNMfImnTu13Mr617pB1g3lpKsVAWo6nYAZLwSxpPXohQUto9uu0xDmPqbZBSG7Q_5spbh0Ru3K5kgngs3cblqD5ZpZIC1B8I8s3my3NKtQFGQmd41Owatd8qmb00Z4JHo_NMEkIIxiDDtvs5wELDXy9p9T9w-xllo-agOUKz0bTaPuto',
+  'chapter2-plate-03': 'https://lh3.googleusercontent.com/aida-public/AB6AXuDYvWESRkIQUwOuIfno6HDEs9mj-556Jwy-nGyu5Pww24SEzISLowIiiyrQoeOHLGLB7JzFwm4SxOVjSzH5TenFgWxbcbaYBSQ6-egumytyIPyiXfr564sFRASYOIY2GuJuZ6C9_Ye4B8K6x6M_bXMKAibWqOlZvhxZubDWdKVPaf3q3ruYDz6q37GaKg4RqqMJL87ZN1-l9NUgtBjMaC0FIm5XO9DsGDIWon23jkGKOn88LOSwWyFqJ2bhtmwnkIFqkDmAUI71rxY',
+  'chapter2-plate-04': 'https://lh3.googleusercontent.com/aida-public/AB6AXuByns5lF1QzAADii9ostv7yK4_TXpAhEbmHRzoXBWGpnr-SkmkSGvugEi1k_3QuAqlotJbZWcNkzhHamoFH6QzUjRL2B3KqOji7TEgICXZ-ShZduIGUaImIXyna2eHygK_CcIGXyxwC83-zFN2HsONAdjUiU8G1krU9HMTxJ5tf7B9RRoPyQ5wWQ4HRGxOiWhJguE7_Bd-Ba9yocbCd3jO0NpEe-_OLMLmu6oo-4-WdH-d_Efh1D-23q8NhknJBzH0XjvSLuJgxcMQ',
+  'chapter2-plate-05': 'https://lh3.googleusercontent.com/aida-public/AB6AXuAWGn9YgtO01TFqOAf4rwS-WPcBv0qqZh_SNhn6uxhiPdpljAwaHAjBuNl-K4X3G8_5NEeGZQy6iHbXhIvO8K7KLzwGf-13G1zQgCEHIMbhUI4JbwEiKKxdKOeKzFiGdARdaJc-fbQb-GvhSYKdfVpcm9q2hcxBAP1fC5HLvRdYuvrc5eVO5CGUA7kzkS2vFjnJdFg9X92KBAuueGo0eAilR9SyvuBXy9ZArLb1Euj_gu51U8RIBcvml4JOqsJIMIAsxOhf8xq3r94',
+
+  // Letter (Epilogue)
+  'epilogue-hero': 'https://lh3.googleusercontent.com/aida-public/AB6AXuARrF8W9q6EKml7mOHHMrM_Iew9hl7BjJq23vs2S3CRhnLjeCPPNuE6SxnK-KpEEwcJejyjqixjKgGRLR4JqOcKjOZyjd0PoboLpyJ9J6yWQyZhEM1r5Vs6XabILHBGQULDwJpN7sPzIANd8llPdQdPUtRyKkC5SikvuitRrALMNXp4_V_nrvQo6gnyAYk21Xy_AMAq_nemklKCmz5GkQqt3mVsumiAtE1VCTVXZx3AJqlwXWuatd9CYcu20bad8pXe4PSEDvXm-y4'
+};
